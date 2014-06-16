@@ -30,11 +30,12 @@ describe('gulp-cleancss', function() {
 
       var stream = cleancss();
       stream.on('data', function(newFile){
-        fs.writeFileSync(expectedPath, newFile.contents);
+        // fs.writeFileSync(expectedPath, newFile.contents);
         should.exist(newFile);
         should.exist(newFile.path);
         should.exist(newFile.relative);
         should.exist(newFile.contents);
+        newFile.contents.toString().length.should.be.above(0);
         should.equal(newFile.contents.toString(), expectedContent.toString());
         newFile.path.should.equal(fixturePath);
         newFile.relative.should.equal(fixtureName);
