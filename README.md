@@ -1,4 +1,4 @@
-# gulp-cleanss [![Build Status](https://secure.travis-ci.org/mgcrea/gulp-cleanss.png?branch=master)](http://travis-ci.org/#!/mgcrea/gulp-cleanss)
+# gulp-cleancss [![Build Status](https://secure.travis-ci.org/mgcrea/gulp-cleancss.png?branch=master)](http://travis-ci.org/#!/mgcrea/gulp-cleancss)
 
 > Gulp task to minify CSS styles with [clean-css](https://github.com/GoalSmashers/clean-css).
 
@@ -9,13 +9,13 @@ This plugin requires Gulp `^3.0.0`
 If you haven't used [Gulp](http://gulpjs.com/) before, be sure to check out the [Getting Started](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) guide, as it explains how to create a [Gulpfile](https://github.com/gulpjs/gulp/blob/master/docs/API.md) as well as install and use Gulp plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install gulp-cleanss --save-dev
+npm install gulp-cleancss --save-dev
 ```
 
 Once the plugin has been installed, it may be required inside your Gulpfile with this line of JavaScript:
 
 ```js
-var cleanss = require('gulp-cleanss');
+var cleanss = require('gulp-cleancss');
 ```
 
 
@@ -23,7 +23,7 @@ var cleanss = require('gulp-cleanss');
 
 ```javascript
 var htmlmin = require('gulp-htmlmin');
-var cleanss = require('gulp-cleanss');
+var cleanss = require('gulp-cleancss');
 
 gulp.task('styles:dist', function() {
   gulp.src('{,*/}*.css')
