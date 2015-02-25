@@ -32,7 +32,7 @@
     "test": "mocha --reporter spec"
   },
   "dependencies": {
-    "chalk": "^0.4.0",
+    "chalk": "^1.0.0",
     "clean-css": "^2.2.1",
     "gulp-util": "2.2.17",
     "through2": "^0.5.1"
